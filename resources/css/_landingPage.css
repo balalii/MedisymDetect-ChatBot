@@ -1,0 +1,80 @@
+
+._header{
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-image: url('../../public/assets/header-bg.png') ;
+}
+
+
+/* hero image */
+._heroImage{
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+    background-image: url('../../public/assets/bg-section.png') ;
+}
+
+._promp::after{
+    content: "";
+    background-image: url('../../public/assets/r-sec.png');
+    background-size: 35px 35px; /* Sesuaikan dengan ukuran yang diinginkan */
+    width: 35px; /* Sesuaikan dengan ukuran yang diinginkan */
+    height: 35px; /* Sesuaikan dengan ukuran yang diinginkan */
+    /* display: inline-block; */
+    display: block;
+    /* position: absolute;  */
+    right: 0;
+    margin-top: -5px;
+    margin-left: auto;
+    margin-right: -30px;
+}
+._heroL::before{
+    content: "";
+    background-image: url('../../public/assets/l-sec.png');
+    background-size: 35px 55px; /* Sesuaikan dengan ukuran yang diinginkan */
+    width: 35px; /* Sesuaikan dengan ukuran yang diinginkan */
+    height: 55px; /* Sesuaikan dengan ukuran yang diinginkan */
+    /* display: inline-block; */
+    display: block;
+    /* position: absolute;  */
+    right: 0;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-left: 40px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  ._promp::after{
+    background-size: 4rem 4rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    width: 4rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    height: 4rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    margin-top: -5px;
+    margin-right: -40px;
+}
+._heroL::before{
+    background-size: 3.5rem 5.5rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    width: 3.5rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    height: 5.5rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    margin-top: -45px;
+    margin-left: 25px;
+}
+}
+
+@media screen and (min-width: 992px) {
+  ._promp::after{
+    background-size: 9rem 9rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    width: 9rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    height: 9rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    margin-top: -5px;
+    margin-right: -130px;
+}
+._heroL::before{
+    background-size: 9rem 11rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    width: 9rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    height: 11rem; /* Sesuaikan dengan ukuran yang diinginkan */
+    margin-top: -110px;
+    margin-left: 140px;
+}
+}

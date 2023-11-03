@@ -1,0 +1,57 @@
+@import "../css/global.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .container{
+    padding: 20px 20px 60px 20px;
+} */
+
+input, textarea{
+    border: gray solid 1px;
+    padding:20px 20px;
+}
+/* Headings are unstyled */
+h1 { 
+    display: block;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: normal;
+    font-size: 2em;
+   
+}
+h2 {
+    display: block;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: normal;
+    font-size: 1.5em;
+ 
+}
+h3 { 
+    display: block;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: normal;
+    font-size: 1.17em;
+ 
+}
+
+/* Lists are unstyled */
+ol{
+    list-style: decimal !important;
+    margin-left: 25px;
+}
+ul{
+    list-style: inside !important;
+    margin-left: 25px;
+}
+ol, ul{
+  list-style-position: outside !important;
+  
+}
+a{
+    color: var(--green);
+    text-decoration: underline;
+}
