@@ -12,10 +12,6 @@ export default {
 
     theme: {
         colors: {
-            // primary: "#D1FF66",
-            // secondary: "#1C1B1D",
-            // bgColor: "#121112",
-            // gray: "#413F44",
             primary: "#0067FE",
             secondary: "#E1EDFF",
             bgColorDark: "#1F2123",
@@ -32,40 +28,17 @@ export default {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
             },
         },
+        container: {
+            center: true,
+            padding: {
+                DEFAULT: "1rem",
+                sm: "1.5rem",
+                lg: "3.5rem",
+                xl: "4.5rem",
+                "2xl": "6.5rem",
+            },
+        },
     },
 
-    plugins: [
-        function ({ addComponents }) {
-            addComponents({
-                ".container": {
-                    margin: "auto",
-                    width: "100%",
-                    paddingLeft: "2rem",
-                    paddingRight: "2rem",
-                    paddingTop: "2rem",
-                    paddingBottom: "3rem",
-                    "@screen sm": {
-                        // width: '640px',
-                        width: "100%",
-                    },
-                    "@screen md": {
-                        // width: '768px',
-                        width: "100%",
-                        paddingLeft: "3.5rem",
-                        paddingRight: "3.5rem",
-                    },
-                    "@screen lg": {
-                        // width: '1280px',
-                        width: "100%",
-                        paddingLeft: "5rem",
-                        paddingRight: "5rem",
-                    },
-                    "@screen xl": {
-                        // width: '1400px',
-                        width: "100%",
-                    },
-                },
-            });
-        },
-    ],
+    plugins: [],
 };

@@ -1,20 +1,5 @@
-@import "../css/_landingPage.css";
+@import "../css/LandingPage.css";
 
-:root {
-    /* --primary-color: #D1FF66; 
-    --secondary-color: #1C1B1D; 
-    --background-color: #121112;  */
-    /* --secondary-color: #F0FAF9;  */
-    --primary-color: #0067FE; 
-    --secondary-color: #E1EDFF; 
-    --background-color: #F9F9F9; 
-    --green: #0067FE; 
-    --gray: #7b7b7b; 
-    --gray-dark: #F1F1F1; 
-    --blue: #1E34C2; 
-    --black: #1F2123; 
-    --white: #ffffff; 
-  }
   html{
     scroll-behavior: smooth !important;
   }

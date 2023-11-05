@@ -5,7 +5,7 @@ import { useDiagnoseContext } from "@/Pages/Chat/Provider/DiagnoseContextProvide
 import MessageParser from "./MessageParser";
 import ActionProvider from "./ActionProvider";
 import ConfigChat from "./ConfigChat";
-import "../../../css/_chatStyle.css";
+import "../../../css/Chat.css";
 
 export default function Chat(props) {
     // console.log(props.diseasesDataDB);
