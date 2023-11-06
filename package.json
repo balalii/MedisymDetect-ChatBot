@@ -25,6 +25,7 @@
         "aos": "^2.3.4",
         "openai": "^4.0.0",
         "react-chatbot-kit": "^2.1.2",
+        "styled-components": "^6.1.0",
         "zustand": "^4.4.6"
     }
 }

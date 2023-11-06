@@ -6,8 +6,6 @@ import "../css/app.css";
 import ThemeProvider from "./Provider/ThemeProvider";
 const appName = import.meta.env.VITE_APP_NAME || "MedisymDetect";
 
-// Remove the second declaration of useThemeStore
-// const theme = useThemeStore((state) => state.theme);
 
 createInertiaApp({
     title: (title) => `${title} ${appName}`,

@@ -1,4 +1,8 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 @import "../css/LandingPage.css";
+
 
   html{
     scroll-behavior: smooth !important;
@@ -21,12 +25,12 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background: var(--gray-dark);
+  background: var(--gray);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gray);
+  background: var(--gray-dark);
 }
 
 

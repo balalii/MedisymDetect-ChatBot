@@ -1,13 +1,12 @@
 import { useThemeStore } from "@/Store/ThemeStore";
+import("../../css/theme/theme.css");
 
 export default function ThemeProvider({ children }) {
-    const isThemeLight = useThemeStore((state) => state.isThemeLight);
+    const theme = useThemeStore((state) => state.theme);
 
-    console.log(isThemeLight);
-    if (isThemeLight) {
-        import("../../css/theme/light.css");
-    } else {
-        import("../../css/theme/dark.css");
-    }
-    return <>{children}</>;
+    return (
+        <div data-theme={theme} className="bg-[var(--background-color)]">
+            {children}
+        </div>
+    );
 }

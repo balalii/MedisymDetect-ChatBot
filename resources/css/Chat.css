@@ -35,7 +35,7 @@
     border-radius: 15px;
     font-size: 0.9rem;
     color: var(--black);
-    width: fit-content !important;
+    width: fit-content;
     text-align: left;
     background-color: var(--secondary-color);
     border: 1px solid var(--gray);
@@ -53,6 +53,9 @@
 .react-chatbot-kit-user-avatar-container {
     width: 40px;
     height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1.2rem;
     margin-right: 12.5px;
     margin-left: unset;
@@ -61,11 +64,12 @@
 
 .react-chatbot-kit-chat-bot-message::before,
 .react-chatbot-kit-user-chat-message::before {
+    font-family: "Poppins", sans-serif;
     content: "MedisymDetect";
     color: var(--white-or-black);
     position: absolute;
     top: -27px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .react-chatbot-kit-chat-bot-message {
@@ -86,10 +90,12 @@
 /* =========================================================================================================*/
 
 .react-chatbot-kit-user-chat-message-container {
-    flex-direction: row-reverse;
+    text-align: right;
+    flex-direction: row;
     background-color: var(--primary-color);
     margin-left: auto;
     margin-bottom: 26px;
+    min-width: fit-content;
 }
 
 .react-chatbot-kit-user-avatar-container {
@@ -101,6 +107,7 @@
     color: var(--white);
     padding: 6px;
     margin-top: -5px !important;
+    font-size: 16px;
 }
 
 .react-chatbot-kit-user-chat-message::before {
@@ -112,14 +119,14 @@
 /* =========================================================================================================*/
 
 .react-chatbot-kit-chat-input-container {
-    padding: 20px;
+    padding: 20px 0px;
     width: 100% !important;
     margin: 0px auto !important;
     background: linear-gradient(
         180deg,
         rgba(249, 249, 249, 0) 0%,
-        #f9f9f9 13.96%,
-        #f9f9f9 100%
+        var(--background-color) 13.96%,
+        var(--background-color) 100%
     );
 }
 
@@ -131,11 +138,12 @@
     color: #fff;
     border-bottom-right-radius: 5px;
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 .react-chatbot-kit-chat-input-form {
     background-color: var(--background-color) !important;
-    width: 93%;
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -144,8 +152,9 @@
     margin-right: 3px;
     background-color: var(--gray) !important;
     color: var(--white-or-black);
-    border: none;
+    border: 1px solid var(--gray-2);
     font-size: 16px;
+    resize: none; /* Disable textarea resizing */
 }
 .react-chatbot-kit-chat-input:focus {
     border: none !important;
@@ -208,6 +217,16 @@
 
 /* mobile */
 @media screen and (min-width: 768px) {
+        .react-chatbot-kit-chat-bot-message-container,
+    .react-chatbot-kit-user-chat-message-container {
+        min-width: 60%;
+        max-width: 90%;
+    }
+    .react-chatbot-kit-user-chat-message-container {
+        min-width: min-content;
+    }
+
+
     .react-chatbot-kit-chat-message-container {
         min-height: 80vh !important;
     }
@@ -215,26 +234,34 @@
         min-height: 89vh !important;
     }
     .react-chatbot-kit-chat-btn-send {
-        width: 57px;
+        width: 55px;
         height: 50px;
+        margin-top: 0px;
 
         margin-left: 10px;
+    }
+    .react-chatbot-kit-chat-input-container {
+        padding: 20px;
+    }
+    .react-chatbot-kit-chat-input-form {
+        width: 93%;
     }
 }
 
 /* desktop */
 @media screen and (min-width: 992px) {
-    .react-chatbot-kit-chat-bot-message-container,
+     .react-chatbot-kit-chat-bot-message-container,
     .react-chatbot-kit-user-chat-message-container {
-        min-width: 40%;
-        max-width: 70%;
+        min-width: 60%;
+        max-width: 80%;
     }
+
     .react-chatbot-kit-chat-message-container {
         padding: 0px 100px;
         min-height: 78vh !important;
         padding-bottom: 100px;
     }
     .react-chatbot-kit-chat-container {
-        min-height: 86vh !important;
+        min-height: 84lvh !important;
     }
 }

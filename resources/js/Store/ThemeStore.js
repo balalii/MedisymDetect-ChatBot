@@ -2,10 +2,10 @@ import { create } from "zustand";
 
 export const useThemeStore = create((set) => ({
     // Theme state
-    isThemeLight: window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? true
-        : false,
-    setIsThemeLight: (isThemeLight) => set({ isThemeLight }),
+    theme: window.matchMedia("(prefers-color-scheme: light)").matches
+        ? "light"
+        : "dark",
+    setTheme: (theme) => set({ theme }),
 
     // // Visual state
     // fullScreenProject: null,

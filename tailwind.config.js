@@ -11,21 +11,9 @@ export default {
     ],
 
     theme: {
-        colors: {
-            primary: "#0067FE",
-            secondary: "#E1EDFF",
-            bgColorDark: "#1F2123",
-            bgColor: "#ffffff",
-            gray: "#F1F1F1",
-            red: "#FF0000",
-            green: "#32D584",
-            white: "#ffffff",
-            black: "#1F2123",
-            blue: "#1E34C2",
-        },
         extend: {
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+                poppins: ["Poppins", "sans-serif"],
             },
         },
         container: {

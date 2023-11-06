@@ -23,6 +23,7 @@ export default function Chat(props) {
             messageParser={MessageParser}
             actionProvider={ActionProvider}
             disableScrollToBottom={true}
+            placeholderText="Kirimkan Pesan"
         />
     );
 }

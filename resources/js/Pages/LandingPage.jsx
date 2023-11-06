@@ -9,10 +9,10 @@ import { Head } from "@inertiajs/react";
 // import { useThemeStore } from "@/Store/ThemeStore";
 
 export default function LandingPage() {
-    // const setIsThemeLight = useThemeStore((state) => state.setIsThemeLight);
+    // const setTheme = useThemeStore((state) => state.setTheme);
 
     // useEffect(() => {
-    //     setIsThemeLight(false);
+    //     setTheme(false);
     // }, []);
 
     return (
