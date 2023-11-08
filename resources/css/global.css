@@ -53,20 +53,20 @@
 
 .ck.ck-toolbar{
   color: white !important;
-  background: var(--secondary-gray) !important;
+  background: var(--black) !important;
   border-color: var(--gray-dark) !important;
   border-radius: 8px 8px 0px 0px !important;
 }
 
 .ck-reset_all :not(.ck-reset_all-excluded *), .ck.ck-reset, .ck.ck-reset_all {
   color: white !important;
-background: var(--secondary-color) !important;
+background: var(--black) !important;
 
 }
 
 .ck.ck-editor__main>.ck-editor__editable {
   color: white !important;
-    background: var(--secondary-color) !important;
+    background: var(--black) !important;
     border-radius: 0px 0px 8px 8px !important;
   }
   

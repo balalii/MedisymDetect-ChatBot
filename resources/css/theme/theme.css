@@ -2,7 +2,9 @@
     --primary-color: #0067FE; 
     --secondary-color: #E1EDFF; 
     --background-color: #F9F9F9;
+    --backround-card:#F2F7FF;
     --white-or-black: #000000 ;
+    
     
     --gray: #EBEBEB; 
     --gray-2: #D1D1D1; 
@@ -11,12 +13,13 @@
     --black: #11100F; 
     --white: #ffffff; 
   }
-
+  
   /* dar */
   [data-theme="dark"] {
     --primary-color: #0067FE; 
     --secondary-color: #242322; 
     --background-color: #11100F;  
+    --backround-card:#303030;
     --white-or-black: #ffffff ;
 
     --gray: #3B3A39; 

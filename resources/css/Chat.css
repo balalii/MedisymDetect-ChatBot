@@ -252,8 +252,7 @@
 @media screen and (min-width: 992px) {
      .react-chatbot-kit-chat-bot-message-container,
     .react-chatbot-kit-user-chat-message-container {
-        min-width: 60%;
-        max-width: 80%;
+        max-width: 84%;
     }
 
     .react-chatbot-kit-chat-message-container {

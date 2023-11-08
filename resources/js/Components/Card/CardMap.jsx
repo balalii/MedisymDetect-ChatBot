@@ -8,10 +8,11 @@ export default function CardMap({ hospital }) {
     const handleClickClose = () => {
         return setSeeDetail(false);
     };
+
     return (
         <>
             <div
-                className="border-2 bg-[#F2F7FF] border-gray/20 group rounded-lg md:rounded-2xl p-3 md:p-4 !w-full md:!w-[45.4%] mb-4 md:mb-7 md:mr-6 cursor-pointer"
+                className="border-2 text-[var(--white-or-black)] border-[var(--gray)] bg-[var(--backround-card)]  group rounded-lg md:rounded-xl p-3 md:p-3 !w-full md:!w-[45.4%] lg:!w-[30%] mb-4 md:mb-7 md:mr-3 cursor-pointer"
                 onClick={seeDetail ? null : handleClickOpen}
             >
                 <div
@@ -21,7 +22,7 @@ export default function CardMap({ hospital }) {
                             : " opacity-0 max-h-0 overflow-hidden"
                     }`}
                 >
-                    <h2 className="font-bold text-sm md:text-base flex-1 line-clamp-1">
+                    <h2 className=" text-sm md:text-xs flex-1 line-clamp-1">
                         {hospital.name}
                     </h2>
                     <svg
@@ -31,7 +32,7 @@ export default function CardMap({ hospital }) {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className={`w-5 md:w-7 h-5 md:h-7 `}
+                        className={`w-5 md:w-6 h-5 md:h-6 `}
                     >
                         <path
                             strokeLinecap="round"
@@ -42,7 +43,7 @@ export default function CardMap({ hospital }) {
                 </div>
                 <img
                     loading="lazy"
-                    className="rounded-md md:rounded-lg w-full aspect-[4/2] object-cover"
+                    className="rounded-md bg-[var(--gray)] md:rounded-lg w-full aspect-[4/2.5] object-cover"
                     src={hospital.image}
                     alt=""
                 />
@@ -50,17 +51,17 @@ export default function CardMap({ hospital }) {
                     <div
                         className={`flex flex-row items-center justify-between `}
                     >
-                        <h3 className="font-bold text-sm md:text-base flex-1 line-clamp-1 ">
-                            {seeDetail ? "5km" : hospital.name}
+                        <h3 className=" text-sm md:text-sm flex-1 line-clamp-1  ">
+                            {seeDetail ? "5km - RS." : hospital.name}
                         </h3>
-                        <span className="flex flex-row items-center justify-between text-black font-bold text-sm md:text-base">
+                        <span className="flex flex-row items-center font-semibold justify-between text-[#0067FE]  text-sm md:text-sm">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                fill="#000"
+                                fill="#0067FE"
                                 viewBox="0 0 24 24"
                                 strokeWidth={1.5}
                                 stroke="currentColor"
-                                className={`w-4 md:w-5 h-4 md:h-5 mr-1`}
+                                className={`w-4 md:w-4 h-4 md:h-4 mr-1`}
                             >
                                 <path
                                     strokeLinecap="round"
@@ -74,7 +75,8 @@ export default function CardMap({ hospital }) {
                     <div>
                         <p
                             className={`text-xs md:text-sm ${
-                                !seeDetail && "line-clamp-2 text-black"
+                                !seeDetail &&
+                                "line-clamp-2 text-[var(--white-or-black)]"
                             }`}
                         >
                             {hospital.location.address}
@@ -98,22 +100,22 @@ export default function CardMap({ hospital }) {
                         <div className="flex flex-row  justify-between space-x-3 !mt-5">
                             <a
                                 href={hospital.location.linkAddress}
-                                className="text-xs no-underline md:text-sm bg-primary text-black font-bold flex-1 rounded-md md:rounded-lg py-2  items-center justify-center flex flex-row"
+                                className="text-xs no-underline md:text-xs bg-[var(--primary-color)] text-white font-bold flex-1 rounded-md md:rounded-lg py-2  items-center justify-center flex flex-row"
                             >
-                                <button>Lokasi Map</button>
+                                <button>Map</button>
                             </a>
                             <a
                                 href={hospital.location.linkAddress}
-                                className="bg-gray text-black font-bold flex-1 rounded-md md:rounded-lg py-2 text-base items-center justify-center flex flex-row"
+                                className="bg-[var(--backround-card)] text-black border border-[var(--primary-color)] font-bold flex-1 rounded-md md:rounded-lg py-2 text-base items-center justify-center flex flex-row"
                             >
                                 <button>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        fill="white"
+                                        fill="#0067FE"
                                         viewBox="0 0 24 24"
                                         strokeWidth={1.5}
                                         stroke="currentColor"
-                                        className="w-4 h-4 text-white"
+                                        className="w-4 h-4 text-[var(--primary-color)]"
                                     >
                                         <path
                                             strokeLinecap="round"

@@ -28,18 +28,20 @@ const ResultDiagnoseMessage = ({ message }) => {
                 {!!resulMLDiagnose ? (
                     <>
                         <p>
-                            <span className="font-bold">Gejala Penyakit :</span>{" "}
+                            <span className="font-semibold">
+                                Gejala Penyakit :
+                            </span>{" "}
                             "{message}" ,
                         </p>
                         <p>
-                            <span className="font-bold">
+                            <span className="font-semibold">
                                 Probabilitas Penyakit :
                             </span>{" "}
-                            <b className="text-primary">
+                            <b className="text-[var(--primary-color)]">
                                 {resulMLDiagnose.highest.disease}
                             </b>{" "}
                             , Tingkat Probabilitas :{" "}
-                            <b className="text-primary">
+                            <b className="text-[var(--primary-color)]">
                                 {resulMLDiagnose.highest.probability}%
                             </b>
                             .
