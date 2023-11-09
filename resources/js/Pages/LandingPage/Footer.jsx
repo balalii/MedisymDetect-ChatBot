@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="flex flex-col items-start space-y-7 lg:flex lg:flex-row lg:justify-between lg:space-y-0">
                     <div className="lg:max-w-2xl">
                         <h2 className="font-bold mb-3 lg:text-3xl">
-                            MedisymDetect
+                            MLmedisym
                         </h2>
                         <p className="text-sm lg:text-base font-light">
                             Platform inovatif dengan dasar Kecerdasan Buatan
@@ -76,7 +76,7 @@ export default function Footer() {
 
                 <div className="mt-10 pt-3 border-t border-white text-center w-full lg:text-right">
                     <span className="text-xs lg:text-base">
-                        MedisymDetect. All Rights Reserved
+                        MLmedisym. All Rights Reserved
                     </span>
                 </div>
             </footer>

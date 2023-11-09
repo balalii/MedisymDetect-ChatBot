@@ -4,7 +4,7 @@ import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import "./bootstrap";
 import "../css/app.css";
 import ThemeProvider from "./Provider/ThemeProvider";
-const appName = import.meta.env.VITE_APP_NAME || "MedisymDetect";
+const appName = import.meta.env.VITE_APP_NAME || "MLmedisym";
 
 
 createInertiaApp({

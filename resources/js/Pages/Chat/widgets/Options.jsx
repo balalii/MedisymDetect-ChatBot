@@ -5,7 +5,7 @@ const Options = (props) => {
                 {props.options.map((option) => {
                     return (
                         <div
-                            className="bg-[var(--secondary-color)] md:max-w-[45%] lg:max-w-[40%] border border-[var(--gray)] mb-5 mx-2 p-4 flex-1 text-[var(--white-or-black)] rounded-xl cursor-pointer hover:bg-[var(--gray)] transition-all"
+                            className="bg-[var(--secondary-color)] md:max-w-[45%] lg:max-w-[42%] border border-[var(--gray)] mb-5 mx-2 p-4 flex-1 text-[var(--white-or-black)] rounded-xl cursor-pointer hover:bg-[var(--gray)] transition-all"
                             onClick={option.handler}
                             key={option.id}
                         >

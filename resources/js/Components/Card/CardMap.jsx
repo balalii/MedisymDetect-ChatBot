@@ -12,7 +12,7 @@ export default function CardMap({ hospital }) {
     return (
         <>
             <div
-                className="border-2 text-[var(--white-or-black)] border-[var(--gray)] bg-[var(--backround-card)]  group rounded-lg md:rounded-xl p-3 md:p-3 !w-full md:!w-[45.4%] lg:!w-[30%] mb-4 md:mb-7 md:mr-3 cursor-pointer"
+                className="border-2 text-[var(--white-or-black)] border-[var(--gray)] bg-[var(--backround-card)]  group rounded-lg md:rounded-lg p-3 md:p-2 !w-full md:!w-[45.4%] lg:!w-[30%] mb-4 md:mb-7 md:mr-3 cursor-pointer"
                 onClick={seeDetail ? null : handleClickOpen}
             >
                 <div
@@ -51,7 +51,7 @@ export default function CardMap({ hospital }) {
                     <div
                         className={`flex flex-row items-center justify-between `}
                     >
-                        <h3 className=" text-sm md:text-sm flex-1 line-clamp-1  ">
+                        <h3 className=" text-sm md:text-xs flex-1 line-clamp-1 pr-2 ">
                             {seeDetail ? "5km - RS." : hospital.name}
                         </h3>
                         <span className="flex flex-row items-center font-semibold justify-between text-[#0067FE]  text-sm md:text-sm">
@@ -74,7 +74,7 @@ export default function CardMap({ hospital }) {
                     </div>
                     <div>
                         <p
-                            className={`text-xs md:text-sm ${
+                            className={`text-xs md:text-xs ${
                                 !seeDetail &&
                                 "line-clamp-2 text-[var(--white-or-black)]"
                             }`}
@@ -83,7 +83,7 @@ export default function CardMap({ hospital }) {
                         </p>
                     </div>
                     <div
-                        className={`transition-all duration-300 text-sm  ${
+                        className={`transition-all duration-300 text-sm md:text-xs  ${
                             seeDetail
                                 ? "opacity-100 space-y-2"
                                 : "opacity-0 max-h-0 overflow-hidden"
@@ -99,12 +99,14 @@ export default function CardMap({ hospital }) {
                         </div>
                         <div className="flex flex-row  justify-between space-x-3 !mt-5">
                             <a
+                                target="_blank"
                                 href={hospital.location.linkAddress}
                                 className="text-xs no-underline md:text-xs bg-[var(--primary-color)] text-white font-bold flex-1 rounded-md md:rounded-lg py-2  items-center justify-center flex flex-row"
                             >
                                 <button>Map</button>
                             </a>
                             <a
+                                target="_blank"
                                 href={hospital.location.linkAddress}
                                 className="bg-[var(--backround-card)] text-black border border-[var(--primary-color)] font-bold flex-1 rounded-md md:rounded-lg py-2 text-base items-center justify-center flex flex-row"
                             >

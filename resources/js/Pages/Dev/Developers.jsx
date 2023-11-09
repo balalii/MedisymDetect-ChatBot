@@ -9,20 +9,20 @@ export default function Developers() {
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-center  lg:space-x-20  w-full">
                     <div className="max-w-md md:max-w-full lg:max-w-xl space-y-3  mt-9">
                         <h1 className="text-3xl md:text-4xl lg:text-6xl !font-bold !leading-tight">
-                            team behind the creation of MedisymDetect
+                            team behind the creation of MLmedisym
                         </h1>
                         <p className="text-lg">
-                            MedisymDetect was designed by Rifig Al Wafaa as a
-                            UI/UX Designer and Iqbal Ali Ar-Ridho as a
-                            Developer, both of whom are students of Universitas
-                            Sains Al-Qur'an 2022. We are focused on innovating
-                            in disease Diagnosis through artificial intelligence
-                            (AI), with the goal of improving healthcare
-                            efficiency and ensuring high quality.
+                            MLmedisym was designed by Rifig Al Wafaa as a UI/UX
+                            Designer and Iqbal Ali Ar-Ridho as a Developer, both
+                            of whom are students of Universitas Sains Al-Qur'an
+                            2022. We are focused on innovating in disease
+                            Diagnosis through artificial intelligence (AI), with
+                            the goal of improving healthcare efficiency and
+                            ensuring high quality.
                         </p>
                     </div>
                     <img
-                loading="lazy"
+                        loading="lazy"
                         src={headerHero}
                         alt=""
                         className="w-full lg:w-[33rem]"

@@ -61,7 +61,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
         }
 
         const botMessage = createChatBotMessage(
-            `Mari jelajahi dua fitur utama yang baru tersedia saat ini. Silakan pilih opsi yang paling sesuai dengan kebutuhan Anda. `,
+            `Coba dua fitur utama yang baru tersedia saat ini. Silakan pilih opsi yang paling sesuai dengan kebutuhan Anda. `,
             {
                 widget: "overview",
             }

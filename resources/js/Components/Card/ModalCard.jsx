@@ -18,7 +18,6 @@ export default function ModalCard(resulMLDiagnose) {
     }
     const theme = useThemeStore((state) => state.theme);
 
-    // console.log(resulMLDiagnose);
     return (
         <>
             <Card
@@ -84,14 +83,14 @@ export default function ModalCard(resulMLDiagnose) {
                                             </Dialog.Title>
                                         </div>
 
-                                        <div className="text-white bg-primary rounded-full p-1 md:p-2 font-bold text-sm md:text-base">
+                                        <div className="text-white bg-primary rounded-full p-1 px-2 md:p-2 md:px-4 font-semibold text-sm md:text-base">
                                             {resulMLDiagnose.probability}%
                                         </div>
                                     </div>
                                     <div className="mt-7 space-y-7 text-base md:text-base">
                                         <img
                                             loading="lazy"
-                                            className="rounded-xl bg-[var(--gray)] mt-2 w-full aspect-[4/2.3] md:aspect-[4/1.7] object-cover"
+                                            className="rounded-xl bg-[var(--gray)] mt-2 w-full aspect-[4/2.3] md:aspect-[4/2.3] object-cover"
                                             src={`storage/images/diseases/${resulMLDiagnose.image}`}
                                             alt=""
                                         />
@@ -112,9 +111,6 @@ export default function ModalCard(resulMLDiagnose) {
                                             </ul>
                                         </div>
                                         <div className="space-y-3">
-                                            {/* <h3 className="font-semibold">
-                                                Pengobatan
-                                            </h3> */}
                                             <RenderHTML
                                                 htmlContent={
                                                     resulMLDiagnose.treatment
@@ -184,7 +180,7 @@ export default function ModalCard(resulMLDiagnose) {
 export function Card({ onClick, disease, probability, image }) {
     return (
         <div
-            className="bg-[var(--backround-card)] border-2 border-[var(--gray)] group rounded-lg lg:rounded-lg p-3 md:p-3 !w-full md:!w-[37%] lg:!w-[30%] mb-4 md:mb-6 md:mr-6 cursor-pointer"
+            className="bg-[var(--backround-card)] border-2 border-[var(--gray)] group rounded-lg lg:rounded-lg p-3 md:p-2 !w-full md:!w-[37%] lg:!w-[30%] mb-4 md:mb-6 md:mr-6 cursor-pointer"
             onClick={onClick}
         >
             <div className="flex flex-row justify-between items-center text-base md:text-base ">

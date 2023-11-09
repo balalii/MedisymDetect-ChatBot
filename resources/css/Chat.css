@@ -2,6 +2,7 @@
     width: 100%;
     background-color: var(--background-color);
     min-height: 84vh !important;
+    padding-top: 20px;
 }
 
 .react-chatbot-kit-chat-inner-container {
@@ -65,7 +66,7 @@
 .react-chatbot-kit-chat-bot-message::before,
 .react-chatbot-kit-user-chat-message::before {
     font-family: "Poppins", sans-serif;
-    content: "MedisymDetect";
+    content: "MLmedisym";
     color: var(--white-or-black);
     position: absolute;
     top: -27px;
@@ -148,21 +149,22 @@
 }
 
 .react-chatbot-kit-chat-input {
-    padding: 15.5px;
+    padding: 12px 15px;
     margin-right: 3px;
-    background-color: var(--gray) !important;
+    background-color: var(--gray-light) !important;
     color: var(--white-or-black);
-    border: 1px solid var(--gray-2);
+    border: 2px solid var(--gray);
     font-size: 16px;
     resize: none; /* Disable textarea resizing */
 }
 .react-chatbot-kit-chat-input:focus {
-    border: none !important;
+    /* border: none !important; */
+    outline: none;
 }
 
 .react-chatbot-kit-chat-input-form,
 .react-chatbot-kit-chat-input {
-    border-radius: 20px;
+    border-radius: 6px;
 }
 
 .react-chatbot-kit-chat-input::placeholder {
@@ -215,7 +217,7 @@
 .react-chatbot-kit-error-docs {
 }
 
-/* mobile */
+/* Tablet */
 @media screen and (min-width: 768px) {
         .react-chatbot-kit-chat-bot-message-container,
     .react-chatbot-kit-user-chat-message-container {
@@ -242,6 +244,7 @@
     }
     .react-chatbot-kit-chat-input-container {
         padding: 20px;
+        padding-bottom: 15px;
     }
     .react-chatbot-kit-chat-input-form {
         width: 93%;

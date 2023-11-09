@@ -18,7 +18,7 @@ export default function LandingPage() {
     return (
         <>
             <Head>
-                <meta name="description" content="Welcome to MedisymDetect" />
+                <meta name="description" content="Welcome to MLmedisym" />
             </Head>
             <div className="bg-white ">
                 <Navbar />

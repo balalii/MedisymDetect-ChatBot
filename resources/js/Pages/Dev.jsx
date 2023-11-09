@@ -10,7 +10,7 @@ export default function Dev() {
                 <title>Developers - </title>
                 <meta
                     name="description"
-                    content="Team Behind The Creation Of MedisymDetect"
+                    content="Team Behind The Creation Of MLmedisym"
                 />
             </Head>
             <div className="bg-white ">

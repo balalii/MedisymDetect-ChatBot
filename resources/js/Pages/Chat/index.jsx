@@ -16,6 +16,18 @@ export default function Chat(props) {
             setUserTesting(props.userTestingDB);
             setDiseaseData(props.diseasesDataDB);
         }
+
+        // get input with class
+        const inputElement = document.querySelector(
+            ".react-chatbot-kit-chat-input"
+        );
+
+        // add required
+        inputElement.setAttribute("required", true);
+        inputElement.setAttribute(
+            "onInvalid",
+            'this.setCustomValidity("Maaf, input tidak boleh kosong")'
+        );
     }, []);
     return (
         <Chatbot

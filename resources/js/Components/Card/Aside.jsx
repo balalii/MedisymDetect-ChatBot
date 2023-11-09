@@ -111,7 +111,7 @@ export default function Aside(params) {
 
             <div className="bg-blue text-white space-y-5 text-center p-7  rounded-xl w-full py-5 hidden md:block ">
                 <h3 className="font-bold text-xl">
-                    MedisymDetect{" "}
+                    MLmedisym{" "}
                     <span className="bg-primary px-3 py-1 text-black rounded-lg ml-1">
                         BETA
                     </span>

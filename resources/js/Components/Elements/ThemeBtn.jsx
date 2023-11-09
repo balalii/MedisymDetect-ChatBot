@@ -8,7 +8,7 @@ export default function ThemeBtn() {
         setTheme(t);
     };
 
-    const className = `block shrink-0 rounded-lg  bg-[var(--background-color)] p-1.5 text-[var(--white-or-black)]  hover:text-[var(--white-or-black)]`;
+    const className = `block shrink-0 rounded-lg  bg-[var(--background-secondary-color)] p-1.5 text-[var(--white-or-black)]  hover:text-[var(--white-or-black)]`;
 
     return (
         <div className="flex gap-2 mr-3 md:mr-6">

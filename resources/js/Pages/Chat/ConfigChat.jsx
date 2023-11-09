@@ -3,7 +3,7 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import Overview from "./widgets/Overview";
 import CoBotAvatar from "./CoBotAvtar";
 
-const botName = "MedisymDetect";
+const botName = "MLmedisym";
 
 const ConfigChat = {
     initialMessages: [

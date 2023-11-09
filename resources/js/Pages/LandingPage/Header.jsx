@@ -22,7 +22,7 @@ export default function Header() {
                     as="button"
                     className="bg-black text-white px-6 py-3 flex flex-row items-center justify-center border-black border rounded-full transition-all hover:bg-black hover:text-white font-semibold"
                 >
-                    Coba MedisymDetect{" "}
+                    Coba MLmedisym{" "}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
