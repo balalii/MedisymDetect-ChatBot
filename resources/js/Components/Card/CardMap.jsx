@@ -12,7 +12,7 @@ export default function CardMap({ hospital }) {
     return (
         <>
             <div
-                className="border-2 text-[var(--white-or-black)] border-[var(--gray)] bg-[var(--backround-card)]  group rounded-lg md:rounded-lg p-3 md:p-2 !w-full md:!w-[45.4%] lg:!w-[30%] mb-4 md:mb-7 md:mr-3 cursor-pointer"
+                className="border-2 text-[var(--white-or-black)] border-[var(--border-card)] bg-[var(--backround-card)]  group rounded-lg md:rounded-lg p-3 md:p-2 !w-full md:!w-[45.4%] lg:!w-[30%] mb-4 md:mb-7 md:mr-3 cursor-pointer"
                 onClick={seeDetail ? null : handleClickOpen}
             >
                 <div
@@ -22,7 +22,7 @@ export default function CardMap({ hospital }) {
                             : " opacity-0 max-h-0 overflow-hidden"
                     }`}
                 >
-                    <h2 className=" text-sm md:text-xs flex-1 line-clamp-1">
+                    <h2 className=" text-sm md:text-xs flex-1 line-clamp-1 pr-1">
                         {hospital.name}
                     </h2>
                     <svg
@@ -32,7 +32,7 @@ export default function CardMap({ hospital }) {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className={`w-5 md:w-6 h-5 md:h-6 `}
+                        className={`w-5 md:w-5 h-5 md:h-5 `}
                     >
                         <path
                             strokeLinecap="round"
@@ -54,7 +54,7 @@ export default function CardMap({ hospital }) {
                         <h3 className=" text-sm md:text-xs flex-1 line-clamp-1 pr-2 ">
                             {seeDetail ? "5km - RS." : hospital.name}
                         </h3>
-                        <span className="flex flex-row items-center font-semibold justify-between text-[#0067FE]  text-sm md:text-sm">
+                        <span className="flex flex-row items-center font-bold justify-between text-[#0067FE]  text-sm md:text-sm">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="#0067FE"
@@ -103,12 +103,12 @@ export default function CardMap({ hospital }) {
                                 href={hospital.location.linkAddress}
                                 className="text-xs no-underline md:text-xs bg-[var(--primary-color)] text-white font-bold flex-1 rounded-md md:rounded-lg py-2  items-center justify-center flex flex-row"
                             >
-                                <button>Map</button>
+                                <button>Lokasi</button>
                             </a>
                             <a
                                 target="_blank"
                                 href={hospital.location.linkAddress}
-                                className="bg-[var(--backround-card)] text-black border border-[var(--primary-color)] font-bold flex-1 rounded-md md:rounded-lg py-2 text-base items-center justify-center flex flex-row"
+                                className="bg-[var(--white)] text-black border border-[var(--primary-color)] font-bold  rounded-md md:rounded-lg py-2 px-2 text-base items-center justify-center flex flex-row"
                             >
                                 <button>
                                     <svg

@@ -5,7 +5,10 @@ export default function ThemeProvider({ children }) {
     const theme = useThemeStore((state) => state.theme);
 
     return (
-        <div data-theme={theme} className="bg-[var(--background-color)]">
+        <div
+            data-theme={theme}
+            className="bg-[var(--background-color)] font-roboto"
+        >
             {children}
         </div>
     );

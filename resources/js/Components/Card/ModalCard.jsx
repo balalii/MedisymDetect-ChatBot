@@ -180,7 +180,7 @@ export default function ModalCard(resulMLDiagnose) {
 export function Card({ onClick, disease, probability, image }) {
     return (
         <div
-            className="bg-[var(--backround-card)] border-2 border-[var(--gray)] group rounded-lg lg:rounded-lg p-3 md:p-2 !w-full md:!w-[37%] lg:!w-[30%] mb-4 md:mb-6 md:mr-6 cursor-pointer"
+            className="bg-[var(--backround-card)] border-2 border-[var(--border-card)] group rounded-lg lg:rounded-lg p-3 md:p-2 !w-full md:!w-[37%] lg:!w-[30%] mb-4 md:mb-6 md:mr-6 cursor-pointer"
             onClick={onClick}
         >
             <div className="flex flex-row justify-between items-center text-base md:text-base ">

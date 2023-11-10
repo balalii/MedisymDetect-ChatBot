@@ -1,5 +1,6 @@
 import Aside from "@/Components/Card/Aside";
 import CardAside from "@/Components/Card/CardAside";
+import Alert from "@/Components/Elements/Alert";
 import ThemeBtn from "@/Components/Elements/ThemeBtn";
 import Icon from "@/Components/Icon/Icon";
 import NavMobileListMenu from "@/Components/NavMobileListMenu";
@@ -13,7 +14,10 @@ export default function Layout({ children }) {
             <header className="bg-[var(--background-secondary-color)]">
                 <div className="mx-auto max-w-screen-xl px-4 py-2 sm:px-6 lg:px-8">
                     <div className="flex items-center sm:justify-between sm:gap-4 text-[var(--white-or-black)]">
-                        <div className="inline-flex items-center">
+                        <a
+                            href="/"
+                            className="inline-flex no-underline items-center"
+                        >
                             <Icon
                                 widht={50}
                                 fillColor={"fill-[var(--primary-color)]"}
@@ -21,44 +25,37 @@ export default function Layout({ children }) {
                             <h1 className="text-base flex-1 pl-0 font-[600] font-poppins ">
                                 MLmedisym
                             </h1>
-                        </div>
+                        </a>
                         <div className="flex flex-1 items-center gap-3 justify-end">
                             <ThemeBtn />
 
-                            <Popover className="relative">
-                                <Popover.Button>
-                                    <button
-                                        type="button"
-                                        className="group flex shrink-0 items-center rounded-lg transition"
-                                    >
-                                        <span className="sr-only">Menu</span>
-                                        <img
-                                            alt="Man"
-                                            src="/user.png"
-                                            className="h-9 w-9 rounded-full object-cover"
-                                        />
+                            <Alert
+                                message={
+                                    "     Maaf Fitur Login masih dalam pengerjaan..."
+                                }
+                            >
+                                <button
+                                    type="button"
+                                    className="group flex shrink-0 items-center rounded-lg transition"
+                                >
+                                    <span className="sr-only">Menu</span>
+                                    <img
+                                        alt="Man"
+                                        src="/user.png"
+                                        className="h-9 w-9 rounded-full object-cover"
+                                    />
 
-                                        <p className="ms-3 hidden text-left text-sm sm:block">
-                                            <strong className="block font-medium">
-                                                Sign in
-                                            </strong>
+                                    <p className="ms-3 hidden text-left text-sm sm:block">
+                                        <strong className="block font-medium">
+                                            Sign in
+                                        </strong>
 
-                                            {/* <span className="text-white0">
+                                        {/* <span className="text-white0">
                                         eric@frusciante.com
                                     </span> */}
-                                        </p>
-                                    </button>
-                                </Popover.Button>
-
-                                <Popover.Panel className="absolute z-10">
-                                    <div className="bg-[var(--secondary-color)] p-3 w-48 absolute right-0 top-2 rounded-md border border-[var(--gray)]">
-                                        Maaf Fitur Login masih dalam
-                                        pengerjaan...
-                                    </div>
-
-                                    <img src="/solutions.jpg" alt="" />
-                                </Popover.Panel>
-                            </Popover>
+                                    </p>
+                                </button>
+                            </Alert>
                         </div>
                     </div>
                 </div>

@@ -25,6 +25,7 @@ export default {
         extend: {
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"],
+                roboto: ["Roboto", "sans-serif"],
             },
         },
         container: {
