@@ -1,59 +1,45 @@
-import MYAOS from "@/utils/AOS";
 import { Link } from "@inertiajs/react";
-import { useEffect } from "react";
 
 export default function CallToAction() {
-    useEffect(() => {
-        MYAOS();
-    }, []);
     return (
-        <section className="container flex flex-col-reverse lg:flex-row w-full justify-between lg:items-center ">
-            <div className="max-w-md">
-                <h3 className="font-semibold lg:text-3xl">
-                    Kami Menyediakan Solusi Kesehatan yang :
-                </h3>
-                <div className="flex flex-row w-full  mt-4 items-center flex-wrap space-y-3 ">
-        
-                    <div
-                        as="button"
-                        className="bg-transparent px-6 py-3 flex flex-row items-center justify-center bg-gray/10 text-gray/70 rounded-full mt-2 mr-2 text-sm md:text-base"
-                    >
-                        Moderen
-                    </div>
-
-                    <div
-                        as="button"
-                        className="bg-transparent px-6 py-3 flex flex-row items-center justify-center bg-gray/10 text-gray/70 rounded-full mt-2 mr-2 text-sm md:text-base"
-                    >
-                        Cepat
-                    </div>
-                    <div
-                        as="button"
-                        className="bg-transparent px-6 py-3 flex flex-row items-center justify-center bg-gray/10 text-gray/70 rounded-full mt-2 mr-2 text-sm md:text-base"
-                    >
-                        Mudah digunakan
-                    </div>
-                    <div
-                        as="button"
-                        className="bg-transparent px-6 py-3 flex flex-row items-center justify-center bg-gray/10 text-gray/70 rounded-full mt-2 mr-2 text-sm md:text-base"
-                    >
-                        Cerdas
-                    </div>
-                    <div
-                        as="button"
-                        className="bg-transparent px-6 py-3 flex flex-row items-center justify-center bg-gray/10 text-gray/70 rounded-full mt-2 mr-2 text-sm md:text-base"
-                    >
-                        Inovatif
+        <section className="container">
+            <div className="mt-10">
+                {/* card 1 */}
+                <div className="bg-primary text-white  rounded-xl md:rounded-3xl md:flex md:flex-col text-left md:text-center items-center ">
+                    <div className="p-10 lg:p-12 space-y-3 flex items-start flex-col lg:space-y-5 md:my-auto">
+                        <h4 className="font-medium capitalize text-xl lg:text-3xl mx-auto">
+                            Tangani Kulit Anda dengan Cepat dan Tepat!
+                        </h4>
+                        <p className="text-base lg:text-lg md:max-w-md lg:max-w-3xl">
+                            Temukan jawaban atas gejala yang Anda alami melalui
+                            interaksi dengan chatbot AI. Dapatkan saran awal
+                            tentang kemungkinan penyakit yang berkaitan dengan
+                            gejala Anda.
+                        </p>
+                        <Link
+                            href="/chats"
+                            as="button"
+                            className="w-full !mt-8 md:w-fit bg-white text-sm text-[var(--primary-color)] px-9 py-4 flex flex-row items-center justify-center  rounded-full transition-all  font-medium mx-auto"
+                        >
+                            Coba Sekarang{" "}
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth="2"
+                                stroke="currentColor"
+                                className="w-3 h-3 ml-3"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                                />
+                            </svg>
+                        </Link>
                     </div>
                 </div>
             </div>
-            <h2 className="mb-6 font-semibold leading-snug md:max-w-xl lg:max-w-[36rem] lg:text-3xl lg:leading-snug flex-1">
-                Kami Berkomitmen Untuk Membantu Anda Memeriksa Diagnosis Penyakit
-                dengan{" "}
-                <span className="text-gray/70" data-aos="fade-up">
-                    Mudah Diakses di Mana Saja Melalui Teknologi AI.
-                </span>
-            </h2>
         </section>
     );
 }

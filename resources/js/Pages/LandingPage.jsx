@@ -9,23 +9,20 @@ import { Head } from "@inertiajs/react";
 // import { useThemeStore } from "@/Store/ThemeStore";
 
 export default function LandingPage() {
-    // const setTheme = useThemeStore((state) => state.setTheme);
-
-    // useEffect(() => {
-    //     setTheme(false);
-    // }, []);
-
     return (
         <>
             <Head>
-                <meta name="description" content="Welcome to MLmedisym" />
+                <meta
+                    name="description"
+                    content={`Welcome to ${import.meta.env.VITE_APP_NAME}`}
+                />
             </Head>
-            <div className="bg-white ">
+            <div className="bg-[#F9F9F9] ">
                 <Navbar />
                 <Header />
-                <CallToAction />
                 <HeroImage />
                 <Feature />
+                <CallToAction />
                 <Footer />
             </div>
         </>

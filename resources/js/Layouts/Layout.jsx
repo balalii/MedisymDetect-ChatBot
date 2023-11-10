@@ -23,7 +23,7 @@ export default function Layout({ children }) {
                                 fillColor={"fill-[var(--primary-color)]"}
                             />
                             <h1 className="text-base flex-1 pl-0 font-[600] font-poppins ">
-                                MLmedisym
+                                {import.meta.env.VITE_APP_NAME}
                             </h1>
                         </a>
                         <div className="flex flex-1 items-center gap-3 justify-end">
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
 
                             <Alert
                                 message={
-                                    "     Maaf Fitur Login masih dalam pengerjaan..."
+                                    "     Maaf fitur Login masih dalam pengembangan..."
                                 }
                             >
                                 <button
@@ -64,8 +64,9 @@ export default function Layout({ children }) {
                 {children}
                 <footer className="bg-[var(--backround-color)] text-[var(--white-or-black)] text-center flex items-center justify-center  text-xs md:text-sm ">
                     <span className="hidden md:block line-clamp-1">
-                        MLmedisym mungkin menampilkan informasi yang kurang
-                        akurat, Seluruh referensi data diambil dari{" "}
+                        {import.meta.env.VITE_APP_NAME} mungkin menampilkan
+                        informasi yang kurang akurat, Seluruh referensi data
+                        diambil dari{" "}
                         <a
                             href="https://www.google.com/"
                             target="_blank"

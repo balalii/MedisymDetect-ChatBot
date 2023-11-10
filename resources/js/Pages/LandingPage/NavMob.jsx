@@ -36,7 +36,7 @@ export default function NavMob() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 md:hidden "
+                className="w-6 h-6 lg:hidden "
             >
                 <path
                     strokeLinecap="round"
@@ -48,7 +48,7 @@ export default function NavMob() {
                 className={`coverMobileNav absolute top-0 z-50 h-[100lvh] flex w-full transition-all  -left-[100vw] `}
             >
                 <div
-                    className={` border-s border-gray  bg-bgColor h-[100lvh] transition-all  w-[70rem] p-5 md:w-[21rem] md:h-[95%]  `}
+                    className={` border-s border-gray  bg-white h-[100lvh] transition-all  w-[70rem] p-5 md:w-[21rem] md:h-[95%]  `}
                 >
                     <svg
                         onClick={closeMenu}
@@ -57,7 +57,7 @@ export default function NavMob() {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-7 h-7 ml-auto text-white"
+                        className="w-7 h-7 ml-auto text-black"
                     >
                         <path
                             strokeLinecap="round"
@@ -68,21 +68,21 @@ export default function NavMob() {
 
                     {/* menu =================== */}
 
-                    <aside className="w-full p-6 bg-bgColor  text-white ">
+                    <aside className="w-full p-6 bg-white  text-black">
                         <nav className="space-y-8 text-sm">
                             <div className="space-y-2">
                                 <h2 className="text-sm font-semibold tracki uppercase dark:text-gray-400">
                                     List Menu
                                 </h2>
-                                <ul className=" md:flex flex-row justify-end items-center !list-none !ml-0 space-y-2  !mt-5">
+                                <ul className=" md:flex flex-row md:flex-col justify-end items-start !list-none !ml-0 space-y-2  !mt-5">
                                     <li className=" lg:block">
                                         <Link
                                             onClick={closeMenu}
                                             href={`/`}
                                             as="a"
-                                            className="text-white text-base no-underline hover:underline"
+                                            className=" text-base no-underline hover:underline"
                                         >
-                                            Home
+                                            Beranda
                                         </Link>
                                     </li>
                                     <li className=" lg:block">
@@ -90,9 +90,9 @@ export default function NavMob() {
                                             onClick={closeMenu}
                                             href={`/#featurs`}
                                             as="a"
-                                            className="text-white text-base no-underline hover:underline"
+                                            className=" text-base no-underline hover:underline"
                                         >
-                                            Feature
+                                            Overview
                                         </Link>
                                     </li>
                                     <li className=" lg:block">
@@ -100,9 +100,9 @@ export default function NavMob() {
                                             onClick={closeMenu}
                                             href="/dev"
                                             as="a"
-                                            className="text-white text-base no-underline hover:underline"
+                                            className=" text-base no-underline hover:underline"
                                         >
-                                            Team Dev
+                                            Kontak
                                         </Link>
                                     </li>
                                     <li className="list-none !mt-14">
@@ -110,16 +110,16 @@ export default function NavMob() {
                                             onClick={closeMenu}
                                             href="/chats"
                                             as="button"
-                                            className="bg-white text-black px-6 py-3 flex flex-row items-center justify-center border-white border rounded-full transition-all  font-semibold"
+                                            className="bg-[var(--primary-color)] text-white px-6 py-4 flex flex-row items-center justify-center border-white border rounded-full transition-all  font-medium"
                                         >
-                                            Mulai Sekarang{" "}
+                                            Coba Sekarang{" "}
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 fill="none"
                                                 viewBox="0 0 24 24"
-                                                strokeWidth="1.5"
+                                                strokeWidth={1.5}
                                                 stroke="currentColor"
-                                                className="w-5 h-5 ml-3"
+                                                className="w-3 h-3 ml-2"
                                             >
                                                 <path
                                                     strokeLinecap="round"

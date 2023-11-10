@@ -36,7 +36,7 @@ export default function Dashboard(props) {
 
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div className="bg-bgColor text-white overflow-hidden shadow-sm sm:rounded-lg  mx-auto">
+                    <div className=" text-white overflow-hidden shadow-sm sm:rounded-lg  mx-auto">
                         <Tab.Group>
                             <div className="w-[90%] lg:w-[60%] mx-auto">
                                 <Tab.List

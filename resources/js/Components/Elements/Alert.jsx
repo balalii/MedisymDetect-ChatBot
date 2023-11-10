@@ -8,7 +8,7 @@ export default function Alert({ children, message }) {
             </Popover.Button>
 
             <Popover.Panel className="absolute z-10">
-                <div className="bg-[var(--secondary-color)] p-3 w-48 absolute right-0 top-2 rounded-md border border-[var(--gray)] text-sm">
+                <div className="bg-[var(--secondary-color)] text-[var(--white-or-black)] p-3 w-48 absolute right-0 top-2 rounded-md border border-[var(--gray)] text-xs">
                     {message}
                 </div>
 

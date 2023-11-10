@@ -5,46 +5,63 @@ import HomeFeatures from "./HomeFeatures";
 export default function Header() {
     return (
         /* ============== header ==============*/
-        <section
-            className={`container _header flex flex-col   bg-bottom bg-cover lg:flex-row lg:justify-between  pt-24 items-center md:pt-36 h-[100vh] `}
-        >
-            <div className="space-y-7">
-                <h1 className="font-bold max-w-72 md:max-w-xl md:text-6xl md:leading-tight">
-                    Transformasi Kesehatan Melalui Diagnosis Cerdas AI
+        <section className="h-[40rem] md:h-[83vh] flex items-center pt-20">
+            <div className="container mx-auto flex flex-col items-center py-16 text-left md:text-center md:py-32 md:px-10  xl:max-w-3xl">
+                <h1 className=" text-4xl  md:text-5xl font-bold  ">
+                    <span className="leading-snug text-[var(--primary-color)] flex flex-col">
+                        Chatbot Machine Learning
+                    </span>
+                    <span className="leading-snug">
+                        untuk Diagnosa Penyakit Kulit
+                    </span>
                 </h1>
-                <HomeFeatures />
-                <p className="md:text-lg md:max-w-xl">
-                    Menuju Kesehatan Terbaik Diagnosis Penyakit Lebih Canggih
-                    dengan Bantuan AI untuk Keputusan yang Penuh Wawasan.
+                <p className="md:px-8 mt-5 mb-10 md:mb-12 text-lg max-w-xl">
+                    Sebuah solusi untuk melakukan diagnosa dini dengan model
+                    chatbot yang mudah dimengerti
                 </p>
-                <Link
-                    href="/chats"
-                    as="button"
-                    className="bg-black text-white px-6 py-3 flex flex-row items-center justify-center border-black border rounded-full transition-all hover:bg-black hover:text-white font-semibold"
-                >
-                    Coba MLmedisym{" "}
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="w-5 h-5 ml-3"
+                <div className="flex flex-wrap justify-center">
+                    <a
+                        href="/chats"
+                        className="w-full no-underline md:w-fit px-8 py-4 m-2 font-medium text-sm inline-flex items-center justify-center  rounded-full bg-[var(--primary-color)] text-white"
                     >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                        />
-                    </svg>
-                </Link>
+                        Get Started Free{" "}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth="2"
+                            stroke="currentColor"
+                            className="w-3 h-3 ml-3"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                            />
+                        </svg>
+                    </a>
+                    <a
+                        href=""
+                        className="w-full no-underline md:w-fit px-8 py-3 m-2 font-medium text-sm inline-flex items-center justify-center border rounded-full text-[var(--primary-color)] border-gray/50"
+                    >
+                        Watch Video
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth="2"
+                            stroke="currentColor"
+                            className="w-3 h-3 ml-3"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                            />
+                        </svg>
+                    </a>
+                </div>
             </div>
-            <img
-                loading="lazy"
-                src={headerHero}
-                className="w-[38rem] h-auto hidden lg:block  absolute right-0 -mt-64 "
-                alt=""
-            />
         </section>
     );
 }
