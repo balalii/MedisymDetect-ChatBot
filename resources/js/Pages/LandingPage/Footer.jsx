@@ -24,7 +24,7 @@ export default function Footer() {
                         <p className="text-gray/70 pb-5">
                             Created by designers for medical.
                         </p>
-                        <p className="text-sm lg:text-base font-light md:max-w-lg">
+                        <p className="text-base lg:text-base font-light md:max-w-lg">
                             Platform inovatif dengan dasar Mechine Learning (ML)
                             untuk memahami beragam diagnosa penyakit.
                             Menyediakan wawasan mendalam mengenai gejala,

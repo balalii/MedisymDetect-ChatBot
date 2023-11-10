@@ -4,34 +4,34 @@ export default function Developers() {
     return (
         <>
             <section
-                className={`container  flex flex-col   bg-bottom bg-cover lg:flex-row lg:justify-between lg:items-center md:pt-32 lg:pt-44 pt-28 `}
+                className={`container  flex flex-col bg-cover lg:flex-row lg:justify-between lg:items-center min-h-[40rem] pt-[17vh] lg:pt-[7vh] `}
             >
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-center  lg:space-x-20  w-full">
-                    <div className="max-w-md md:max-w-full lg:max-w-xl space-y-3  mt-9">
-                        <h1 className="text-3xl md:text-4xl lg:text-6xl !font-bold !leading-tight">
+                    <div className="max-w-lg  space-y-12  mt-16 lg:mt-0">
+                        <h1 className="text-4xl md:text-4xl lg:text-6xl !font-medium !leading-none">
                             team behind the creation of{" "}
-                            {import.meta.env.VITE_APP_NAME}
+                            <span className="bg-[var(--primary-color)] text-white px-4 rounded-lg md:rounded-xl relative top-3">
+                                {import.meta.env.VITE_APP_NAME}
+                            </span>
                         </h1>
-                        <p className="text-lg">
+                        <p className="max-w-md">
                             {import.meta.env.VITE_APP_NAME} was designed by
                             Rifig Al Wafaa as a UI/UX Designer and Iqbal Ali
                             Ar-Ridho as a Developer, both of whom are students
                             of Universitas Sains Al-Qur'an 2022. We are focused
-                            on innovating in disease Diagnosis through
-                            artificial intelligence (AI), with the goal of
-                            improving healthcare efficiency and ensuring high
-                            quality.
+                            on innovating in disease Diagnosis through Mechine
+                            Learning (ML).
                         </p>
                     </div>
                     <img
                         loading="lazy"
                         src={headerHero}
                         alt=""
-                        className="w-full lg:w-[33rem]"
+                        className="w-[18rem] md:w-[30rem] lg:w-[30rem]"
                     />
                 </div>
             </section>
-            <section className="p-6 dark:bg-gray-800 dark:text-gray-100 mt-0 md:mt-10">
+            {/* <section className="p-6 dark:bg-gray-800 dark:text-gray-100 mt-0 md:mt-10">
                 <div className="container p-4 mx-auto text-center">
                     <h2 className="text-3xl font-bold">We use technology</h2>
                 </div>
@@ -182,7 +182,7 @@ export default function Developers() {
                         </svg>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     );
 }

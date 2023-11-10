@@ -27,7 +27,7 @@ export default function Navbar(params) {
                             <Link
                                 href={`/`}
                                 as="a"
-                                className="text-black no-underline hover:underline"
+                                className="text-black no-underline hover:text-[var(--primary-color)]"
                             >
                                 Beranda
                             </Link>
@@ -36,7 +36,7 @@ export default function Navbar(params) {
                             <Link
                                 href={`/#featurs`}
                                 as="a"
-                                className="text-black no-underline hover:underline"
+                                className="text-black no-underline hover:text-[var(--primary-color)]"
                             >
                                 Overview
                             </Link>
@@ -45,9 +45,9 @@ export default function Navbar(params) {
                             <Link
                                 href="/dev"
                                 as="a"
-                                className="text-black no-underline hover:underline"
+                                className="text-black no-underline hover:text-[var(--primary-color)]"
                             >
-                                Kontak
+                                Developers
                             </Link>
                         </li>
                     </ul>

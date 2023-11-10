@@ -48,7 +48,7 @@ export default function NavMob() {
                 className={`coverMobileNav absolute top-0 z-50 h-[100lvh] flex w-full transition-all  -left-[100vw] `}
             >
                 <div
-                    className={` border-s border-gray  bg-white h-[100lvh] transition-all  w-[70rem] p-5 md:w-[21rem] md:h-[95%]  `}
+                    className={` border-s border-gray  bg-white h-[100lvh] transition-all  w-[70rem] p-5 md:w-[31rem] md:h-[95%]  `}
                 >
                     <svg
                         onClick={closeMenu}
@@ -102,15 +102,15 @@ export default function NavMob() {
                                             as="a"
                                             className=" text-base no-underline hover:underline"
                                         >
-                                            Kontak
+                                            Developers
                                         </Link>
                                     </li>
-                                    <li className="list-none !mt-14">
+                                    <li className="list-none !mt-14 hidden">
                                         <Link
                                             onClick={closeMenu}
                                             href="/chats"
                                             as="button"
-                                            className="bg-[var(--primary-color)] text-white px-6 py-4 flex flex-row items-center justify-center border-white border rounded-full transition-all  font-medium"
+                                            className="bg-[var(--primary-color)]  text-white px-6 md:px-10 py-4 flex flex-row items-center justify-center border-white border rounded-full transition-all  font-medium"
                                         >
                                             Coba Sekarang{" "}
                                             <svg

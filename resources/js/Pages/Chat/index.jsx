@@ -24,10 +24,7 @@ export default function Chat(props) {
 
         // add required
         inputElement.setAttribute("required", true);
-        inputElement.setAttribute(
-            "onInvalid",
-            'this.setCustomValidity("Maaf, input tidak boleh kosong")'
-        );
+
     }, []);
     return (
         <Chatbot

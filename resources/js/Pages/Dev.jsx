@@ -10,10 +10,12 @@ export default function Dev() {
                 <title>Developers - </title>
                 <meta
                     name="description"
-                    content="Team Behind The Creation Of MLmedisym"
+                    content={`Team Behind The Creation Of ${
+                        import.meta.env.VITE_APP_NAME
+                    }`}
                 />
             </Head>
-            <div className="bg-white ">
+            <div className="bg-[#F9F9F9]">
                 <Navbar />
                 <Developers />
                 <Footer />

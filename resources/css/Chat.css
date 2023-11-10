@@ -41,6 +41,7 @@
     background-color: var(--secondary-color);
     border: 1px solid var(--gray);
     min-width: 80%;
+    margin-right: 15px !important;
     /* min-width: 40%; */
     /* max-width: 70%; */
 }
@@ -145,6 +146,7 @@
 .react-chatbot-kit-chat-input-form {
     background-color: var(--background-color) !important;
     width: 100%;
+    
     margin: 0px auto;
 }
 
@@ -155,6 +157,7 @@
     color: var(--white-or-black);
     border: 2px solid var(--gray);
     font-size: 16px;
+    margin-top: 0px;
     resize: none; /* Disable textarea resizing */
 }
 .react-chatbot-kit-chat-input:focus {
@@ -271,3 +274,4 @@
         width: 93%;
     }
 }
+ 

@@ -52,7 +52,7 @@ export default function CardMap({ hospital }) {
                         className={`flex flex-row items-center justify-between `}
                     >
                         <h3 className=" text-sm md:text-xs flex-1 line-clamp-1 pr-2 ">
-                            {seeDetail ? "5km - RS." : hospital.name}
+                            {seeDetail ? `${hospital.km} KM` : hospital.name}
                         </h3>
                         <span className="flex flex-row items-center font-bold justify-between text-[#0067FE]  text-sm md:text-sm">
                             <svg

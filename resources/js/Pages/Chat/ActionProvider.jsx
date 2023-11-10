@@ -46,7 +46,16 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
 
     // =========== Widget Options
     const handleOptions = (message) => {
-        if (nameUser != null && message!='terimaksih' && message!=('Terimaksih') && message!=('Makasih') && message!=('makasih') && message!=('Thanks') && message!=('thanks') && message!=('suon')) {
+        if (
+            nameUser != null &&
+            message != "terimaksih" &&
+            message != "Terimaksih" &&
+            message != "Makasih" &&
+            message != "makasih" &&
+            message != "Thanks" &&
+            message != "thanks" &&
+            message != "suon"
+        ) {
             const botMessage = createChatBotMessage(
                 `Maaf ${nameUser}, saat ini Saya belum dilengkapi dengan kemampuan pemrosesan bahasa alami (NLP), yang berarti Saya belum bisa memahami pernyataan dengan cara yang sangat alami. Namun, jangan khawatir, Saya siap membantu Anda dalam dua topik di bawah ini:`,
                 {
@@ -61,7 +70,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
         }
 
         const botMessage = createChatBotMessage(
-            `Coba dua fitur utama yang baru tersedia saat ini. Silakan pilih opsi yang paling sesuai dengan kebutuhan Anda. `,
+            `Coba dua fitur utama yang baru tersedia saat ini. `,
             {
                 widget: "overview",
             }
@@ -76,7 +85,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     // ============ Cek Diagnose
     const handleDiagnose = () => {
         const botMessage = createChatBotMessage(
-            `Tentu ${nameUser}, Mohon jelaskan dengan lebih rinci gejala kulit yang Anda alami. Semakin spesifik informasinya, semakin baik Saya dapat membantu Anda!`
+            `Tentu ${nameUser}, Mohon jelaskan dengan Rinci Gejala kulit yang Anda alami. Semakin spesifik informasinya, semakin baik Saya dapat membantu Anda!`
         );
         setState((prev) => ({
             ...prev,

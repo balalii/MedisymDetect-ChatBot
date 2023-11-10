@@ -1,7 +1,10 @@
+import MYAOS from "@/utils/AOS";
+import { useEffect } from "react";
+
 const DATA_FEATURE = [
     {
         name: "Diagnosa",
-        desc: "Menyederhanakan Pengoperasian Chatbot dengan Pilihan Fitur yang Lebih Mudah",
+        desc: "Media awal diagnosa penyakit kulit yang efisien dan cepat.",
         svg: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +12,7 @@ const DATA_FEATURE = [
                 viewBox="0 0 24 24"
                 strokeWidth={2}
                 stroke="currentColor"
-                className="w-16 h-16 -mt-5 text-primary"
+                className="w-12 h-12 -mt-4 text-primary"
             >
                 <path
                     strokeLinecap="round"
@@ -18,10 +21,11 @@ const DATA_FEATURE = [
                 />
             </svg>
         ),
+        inprogres: false,
     },
     {
         name: "Cari Lokasi",
-        desc: "Menyederhanakan Pengoperasian Chatbot dengan Pilihan Fitur yang Lebih Mudah",
+        desc: "Temukan Lokasi Layanan Kesehatan Terdekat.",
         svg: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +33,7 @@ const DATA_FEATURE = [
                 viewBox="0 0 24 24"
                 strokeWidth={2}
                 stroke="currentColor"
-                className="w-16 h-16 -mt-5 text-primary"
+                className="w-10 h-10 -mt-3 text-primary"
             >
                 <path
                     strokeLinecap="round"
@@ -43,23 +47,25 @@ const DATA_FEATURE = [
                 />
             </svg>
         ),
+        inprogres: false,
     },
     {
-        name: "Konsultasi",
-        desc: "Menyederhanakan Pengoperasian Chatbot dengan Pilihan Fitur yang Lebih Mudah",
+        inprogres: true,
+        name: "Detection",
+        desc: "Deteksi Penyakit menggunakan gambar.",
         svg: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth={2}
+                strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-16 h-16 -mt-5 text-primary"
+                className="w-10 h-10 -mt-4 text-primary"
             >
                 <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
+                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
                 />
             </svg>
         ),
@@ -67,27 +73,30 @@ const DATA_FEATURE = [
 ];
 
 export default function Feature() {
+    useEffect(() => {
+        MYAOS();
+    }, []);
     return (
         <section className="container " id="featurs">
-            <div className="lg:px-36">
+            <div className="lg:px-14">
                 <div className="px-4 py-10 md:py-16 mx-auto max-w-7xl sm:px-6 lg:px-2">
-                    {/* <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-3xl font-extrabold sm:text-4xl">
-                            All the features you want
-                        </h2>
-                        <p className="mt-4 text-lg text-gray-600">
-                            Pellentesque viverra, leo id euismod laoreet, nunc
-                            risus molestie orci, vel faucibus quam justo id
-                            mauris.
-                        </p>
-                    </div> */}
                     <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid  sm:gap-x-6 sm:gap-y-10 md:grid-cols-3 lg:gap-x-4">
                         {DATA_FEATURE.map((data, idx) => (
-                            <div key={idx} className="flex">
+                            <div
+                                key={idx}
+                                className="flex"
+                                data-aos="fade-up"
+                                data-aos-delay={`${200 * idx}`}
+                            >
                                 {data.svg}
                                 <div className="ml-3">
-                                    <dt className="text-2xl font-medium">
-                                        {data.name}
+                                    <dt className="text-xl md:text-2xl font-medium">
+                                        {data.name}{" "}
+                                        {data.inprogres && (
+                                            <span className="bg-gray/30 relative -top-3 text-xs rounded-md text-white px-2 py-1 left-2">
+                                                Future
+                                            </span>
+                                        )}
                                     </dt>
                                     <dd className="mt-2 text-gray-300 text">
                                         {data.desc}

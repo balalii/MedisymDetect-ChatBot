@@ -17,7 +17,7 @@ export default function LandingPage() {
                     content={`Welcome to ${import.meta.env.VITE_APP_NAME}`}
                 />
             </Head>
-            <div className="bg-[#F9F9F9] ">
+            <div className="bg-[#F9F9F9] px-3 md:px-0 ">
                 <Navbar />
                 <Header />
                 <HeroImage />

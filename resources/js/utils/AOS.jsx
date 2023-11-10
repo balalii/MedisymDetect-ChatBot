@@ -6,8 +6,8 @@ const MYAOS = () => {
     return AOS.init({
         duration: 800,
         once: true,
-        offset: 300,
-        disable: "phone",
+        offset: 100,
+        // disable: "phone",
     });
 };
 
