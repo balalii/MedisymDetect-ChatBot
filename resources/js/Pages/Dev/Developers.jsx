@@ -16,11 +16,10 @@ export default function Developers() {
                         </h1>
                         <p className="max-w-md">
                             {import.meta.env.VITE_APP_NAME} was designed by
-                            Rifig Al Wafaa as a UI/UX Designer and Iqbal Ali
-                            Ar-Ridho as a Developer, both of whom are students
-                            of Universitas Sains Al-Qur'an 2022. We are focused
-                            on innovating in disease Diagnosis through Mechine
-                            Learning (ML).
+                            Rifig Al Wafaa and Iqbal Ali Ar-Ridho, both of whom
+                            are students of Universitas Sains Al-Qur'an 2022. We
+                            are focused on innovating in disease Diagnosis
+                            through Mechine Learning (ML).
                         </p>
                     </div>
                     <img

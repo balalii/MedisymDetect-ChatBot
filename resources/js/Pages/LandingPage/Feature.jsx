@@ -93,7 +93,7 @@ export default function Feature() {
                                     <dt className="text-xl md:text-2xl font-medium">
                                         {data.name}{" "}
                                         {data.inprogres && (
-                                            <span className="bg-gray/30 relative -top-3 text-xs rounded-md text-white px-2 py-1 left-2">
+                                            <span className="bg-gray/40 tracking-wider font-light relative -top-3 text-xs rounded-md text-white px-2 py-1 left-2">
                                                 Future
                                             </span>
                                         )}

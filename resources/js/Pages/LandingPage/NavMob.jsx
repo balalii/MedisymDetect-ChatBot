@@ -70,11 +70,11 @@ export default function NavMob() {
 
                     <aside className="w-full p-6 bg-white  text-black">
                         <nav className="space-y-8 text-sm">
-                            <div className="space-y-2">
+                            <div className="space-y-5">
                                 <h2 className="text-sm font-semibold tracki uppercase dark:text-gray-400">
                                     List Menu
                                 </h2>
-                                <ul className=" md:flex flex-row md:flex-col justify-end items-start !list-none !ml-0 space-y-2  !mt-5">
+                                <ul className=" md:flex flex-row md:flex-col justify-end items-start !list-none !ml-0 !space-y-3  !mt-5">
                                     <li className=" lg:block">
                                         <Link
                                             onClick={closeMenu}

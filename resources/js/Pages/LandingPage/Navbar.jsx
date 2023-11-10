@@ -6,7 +6,7 @@ import Alert from "@/Components/Elements/Alert";
 export default function Navbar(params) {
     return (
         <div className=" !w-full flex flex-row justify-center">
-            <nav className="flex flex-row justify-between absolute top-0 items-center  z-50  py-2   !mx-auto !w-full bg-[var(--white-or-black)]">
+            <nav className="flex flex-row justify-between absolute top-0 items-center  z-50  py-2   !mx-auto !w-full bg-[var(background-secondary-color)]">
                 <div className="px-5 md:px-10 w-full mx-auto flex flex-row justify-between items-center ">
                     <Link
                         href="/"

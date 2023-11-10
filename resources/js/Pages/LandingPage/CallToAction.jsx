@@ -13,10 +13,10 @@ export default function CallToAction() {
                 <div className="bg-primary text-white  rounded-xl md:rounded-3xl md:flex md:flex-col text-left md:text-center items-center ">
                     <div className="p-10 lg:p-12 space-y-3 flex items-start flex-col lg:space-y-5 md:my-auto">
                         <h4
-                            className="font-medium capitalize text-xl lg:text-3xl mx-auto"
+                            className="font-medium capitalize text-2xl lg:text-3xl mx-auto"
                             data-aos="fade-up"
                         >
-                            Tangani Kulit Anda dengan Cepat dan Tepat!
+                            Tangani Penyakit Kulit Anda dengan Cepat dan Tepat!
                         </h4>
                         <p
                             className="text-base lg:text-lg md:max-w-md lg:max-w-3xl"

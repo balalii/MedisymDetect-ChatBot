@@ -38,7 +38,7 @@ export default function Header() {
                     </a>
                     <a
                         href=""
-                        className="w-full no-underline md:w-fit px-8 py-3 m-2 font-medium text-sm inline-flex items-center justify-center border rounded-full text-[var(--primary-color)] border-gray/50"
+                        className="w-full no-underline md:w-fit px-8 py-4 m-2 font-medium text-sm inline-flex items-center justify-center border rounded-full text-[var(--primary-color)] border-gray/50"
                     >
                         Watch Video
                         <svg
