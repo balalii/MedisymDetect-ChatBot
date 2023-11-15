@@ -4,7 +4,7 @@ export default function Developers() {
     return (
         <>
             <section
-                className={`container  flex flex-col bg-cover lg:flex-row lg:justify-between lg:items-center min-h-[40rem] pt-[17vh] lg:pt-[7vh] `}
+                className={`container  flex flex-col bg-cover lg:flex-row lg:justify-between lg:items-center min-h-[40rem] lg:min-h-screen pt-[17vh] lg:pt-[0vh] `}
             >
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-center  lg:space-x-20  w-full">
                     <div className="max-w-lg  space-y-12  mt-16 lg:mt-0">

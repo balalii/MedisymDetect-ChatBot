@@ -18,7 +18,7 @@ export default function Navbar(params) {
                                 fillColor={"fill-[var(--primary-color)]"}
                             />
                         </div>
-                        <span className=" text-xl">
+                        <span className=" text-2xl">
                             {import.meta.env.VITE_APP_NAME}
                         </span>
                     </Link>
@@ -64,14 +64,14 @@ export default function Navbar(params) {
                                     <div
                                         // href=""
                                         as="button"
-                                        className="bg-transparent text-black px-6 py-2.5 flex  flex-row text-sm items-center justify-center  rounded-full transition-all  font-medium"
+                                        className="bg-transparent text-black px-6 py-2.5 flex  flex-row text-base items-center justify-center  rounded-full transition-all  font-medium"
                                     >
                                         Log In
                                     </div>
                                     <div
                                         // href=""
                                         as="button"
-                                        className="bg-[var(--primary-color)] text-white px-6 py-2.5 flex flex-row text-sm items-center justify-center  rounded-full transition-all  font-medium"
+                                        className="bg-[var(--primary-color)] text-white px-6 py-2.5 flex flex-row text-base items-center justify-center  rounded-full transition-all  font-medium"
                                     >
                                         Sign up
                                     </div>

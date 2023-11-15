@@ -2,8 +2,8 @@ export default function Header() {
     return (
         /* ============== header ==============*/
         <section className="h-[40rem] md:h-[85vh] flex items-center pt-20">
-            <div className="container mx-auto flex flex-col items-center py-16 text-left md:text-center md:py-32 md:px-10  xl:max-w-3xl">
-                <h1 className=" text-4xl  md:text-5xl font-bold  ">
+            <div className="container mx-auto flex flex-col items-center py-16 text-left md:text-center md:py-32 md:px-10  xl:max-w-4xl">
+                <h1 className=" text-4xl  md:text-6xl font-bold  ">
                     <span className=" leading-tight md:leading-snug text-[var(--primary-color)] flex flex-col">
                         Chatbot Machine Learning
                     </span>

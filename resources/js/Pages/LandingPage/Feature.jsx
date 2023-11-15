@@ -79,7 +79,7 @@ export default function Feature() {
     return (
         <section className="container " id="featurs">
             <div className="lg:px-14">
-                <div className="px-4 py-10 md:py-16 mx-auto max-w-7xl sm:px-6 lg:px-2">
+                <div className="px-4 py-10 md:py-16 mx-auto max-w-7xl sm:px-6 lg:px-28">
                     <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid  sm:gap-x-6 sm:gap-y-10 md:grid-cols-3 lg:gap-x-4">
                         {DATA_FEATURE.map((data, idx) => (
                             <div
