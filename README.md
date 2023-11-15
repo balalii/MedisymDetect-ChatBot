@@ -11,10 +11,9 @@
 ## About The Project
 This is a collaborative project of machine learning for the chatbot-based medical world, this project uses Laravel V.10 and Inertia (ReactJs) technology.
 
-You can visit this link "https://medisymdetect.cloud/" or you can run on local by following the steps below
-### Installation
+You can visit this link "https://medisymdetect.cloud/" or you can run on local by following the steps below.
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+### Installation
 
 1. Install Composer vendor
    ```sh
